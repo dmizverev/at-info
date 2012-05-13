@@ -1,0 +1,35 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutoTic.Tests", "AutoTic.Tests\AutoTic.Tests.csproj", "{D802304E-EEDC-4AB3-8443-0C225FF95C95}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutoTic.TestModel", "AutoTic.TestModel\AutoTic.TestModel.csproj", "{ADB2A5EF-F7E9-4D79-9996-E3606AA8E323}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutoTic.Core", "AutoTic.Core\AutoTic.Core.csproj", "{C2C494B7-1D10-40D4-BC16-66278B8A84E2}"
+EndProject
+Global
+	GlobalSection(TestCaseManagementSettings) = postSolution
+		CategoryFile = AutoTic.vsmdi
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D802304E-EEDC-4AB3-8443-0C225FF95C95}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D802304E-EEDC-4AB3-8443-0C225FF95C95}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D802304E-EEDC-4AB3-8443-0C225FF95C95}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D802304E-EEDC-4AB3-8443-0C225FF95C95}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ADB2A5EF-F7E9-4D79-9996-E3606AA8E323}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ADB2A5EF-F7E9-4D79-9996-E3606AA8E323}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ADB2A5EF-F7E9-4D79-9996-E3606AA8E323}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ADB2A5EF-F7E9-4D79-9996-E3606AA8E323}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C2C494B7-1D10-40D4-BC16-66278B8A84E2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C2C494B7-1D10-40D4-BC16-66278B8A84E2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C2C494B7-1D10-40D4-BC16-66278B8A84E2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C2C494B7-1D10-40D4-BC16-66278B8A84E2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
