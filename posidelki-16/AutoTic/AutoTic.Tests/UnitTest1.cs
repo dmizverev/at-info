@@ -8,6 +8,8 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 #region ====== NUnit / MSTest
 #if !NUNIT
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using WatiN.Core;
+
 #else
 using NUnit.Framework;
 using TestClass = NUnit.Framework.TestFixtureAttribute;
@@ -78,29 +80,8 @@ namespace AutoTic.Tests
         public void TestMethod1()
         {
             GameBoardPage boardPage = new GameBoardPage();
-            var gameConfig = new GameConfiguration()
-                                 {
-                                     CrossesMovesFirst = false,
-                                     CrossesPlayerType = "Expert",
-                                     NoughtsPlayerType = "Expert",
-                                 };
             boardPage.Show();
-            boardPage.Set(gameConfig);
-            boardPage.ClearStats();
 
-
-            for (var i = 1; i < 100; i++)
-            {
-                boardPage.StartNewGame();
-                
-            }
-
-            
-            gameConfig.UpdateFromCurrentStatus();
-
-
-            Assert.AreEqual(0, gameConfig.NoughtsWinsCount);
-            Assert.AreEqual(0, gameConfig.CrossesWinsCount);
 
         }
 
