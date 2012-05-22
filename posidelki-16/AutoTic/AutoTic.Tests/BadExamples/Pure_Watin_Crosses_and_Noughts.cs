@@ -12,7 +12,7 @@ namespace AutoTic.Tests.BadExamples
     public class Pure_Watin_Crosses_and_Noughts
     {
         [TestMethod]
-        public void GoogleSearchTest()
+        public void PureWatiNTest()
         {
             IE ie = new IE(@"http://ostermiller.org/calc/tictactoe.html");
 

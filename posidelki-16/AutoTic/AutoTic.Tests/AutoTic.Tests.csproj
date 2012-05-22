@@ -77,6 +77,12 @@
     </Compile>
     <Compile Include="Feature Set\Step Definitions\F10 User Winning terms and conditions.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SimpleTestWatiN\Yandex Search Page.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Yandex Search Page.feature</DependentUpon>
+    </Compile>
+    <Compile Include="SimpleTestWatiN\Yandex_Search_Page_Steps.cs" />
     <Compile Include="UnitTest1.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -94,6 +100,10 @@
       <LastGenOutput>F10 User Winning terms and conditions.feature.cs</LastGenOutput>
     </None>
     <None Include="packages.config" />
+    <None Include="SimpleTestWatiN\Yandex Search Page.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>Yandex Search Page.feature.cs</LastGenOutput>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\AutoTic.Core\AutoTic.Core.csproj">
