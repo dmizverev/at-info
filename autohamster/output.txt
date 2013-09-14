@@ -1,0 +1,39 @@
+Дайджест полезных ссылок для тестировщиков-автоматизаторов #001 
+
+<img src="/uploads/default/16/e7ca841252bf0e41.png" width="529" height="136">
+
+### Статьи по автоматизации тестирования
+* [Martin Fowler: http://martinfowler.com/bliki/PageObject.html](http://martinfowler.com/bliki/PageObject.html)  <br>Мартин Фаулер, известный человек в кругах разработчиков и архитекторов, добавил описание шаблона PageObject в контексте создания ПО. Так что теперь можно смело считать PageObject -- официальным паттерном проектирования!<br><br>
+* [Using Logs Effectively](http://codeweavers.net/using-logs-effectively/)  <br>Три монитора для мониторинга логов. Такое бы прикрутить для тестов!<br><br>
+* [Selenide - Лаконичные UI тесты на Java](ru.selenide.org) (Прислал(-а): Андрей Солнцев) <br>Selenide - это библиотека для UI тестов, построенная на базе Selenium WebDriver и решающая самые главные надоедливые проблемы тестировщика. Вам больше не нужно заботиться о том, как открыть и закрыть браузер, не надо беспокоиться о таймаутах, не надо писать монструозный код для ожидания наступления событий - сконцентрируйтесь на бизнес-логике!  <br><br>
+* [Selenium Alchemy (Blog)](http://alchemyse.wordpress.com)  <br>Подборка советов по работе с Selenium WebDriver и сопутствующих тем автоматизации.<br><br>
+* [Using WebDriver to automatically check for JavaScript errors on every page](http://watirmelon.com/2012/12/19/using-webdriver-to-automatically-check-for-javascript-errors-on-every-page/)  <br>Полезный пример, как отловить JavaScript ошибки на WebDriver<br><br>
+* [Martin Fowler: Writing Tests Against Page Objects](http://architects.dzone.com/articles/writing-tests-against-page)  <br>И еще одна статья, посвященная ПейджОбщектам от Мартина Фаулера, но неперь ориентирована на тестирование<br><br>
+
+
+### Инструменты
+* [Chorus is a lightweight BDD test framework written in Java](https://github.com/Chorus-bdd/Chorus)  <br>Это инструмент для распределенного (параллельного) запуска Given/When/Then спецификаций для тестов на Java<br><br>
+
+
+### Видео по автоматизации тестирования
+* [Webinar: Developing Test Automation Scripts with RubyMine](http://www.youtube.com/watch?v=zpt15XIjpas)  <br>Вебинар посвящен созданию тестов на Ruby + Cucumber + PageObject gem. От автора этого самого PageObject gem’а. Кроме того, рассматривается вопрос краткости, читабельности Cucumber-сценариев и уместности использования таблиц <br><br>
+
+
+### Чудотворный  код
+* [Xvfb and ffmpeg Video recording](https://github.com/leonid-shevtsov/headless/blob/master/lib/headless/video/video_recorder.rb)  <br>Пример того, как записать видео состояния экрана на «безголовом»  графическом сервере при помощи ffmpeg<br><br>
+
+
+### Обсуждения
+* [What is the difference between Software Test Engineer, Test Automation Engineer and Software Developer in Test (SDET)?](http://sqa.stackexchange.com/questions/6408/what-is-the-difference-between-software-test-engineer-test-automation-engineer/6409)  <br>Так в чем же, все-таки, разница между: тестировщиком, автоматизатором и разработчиком «в тесте»?<br><br>
+* [PhantomJS: Render image to stdout](https://groups.google.com/forum/#!searchin/phantomjs/video/phantomjs/wluVGGjhL90/rE5zZ5znv4EJ)  <br>Похоже, «браузер без головы», PhantomJS, умеет сохранять скриншоты в стандартный поток вывода. Этот поток можно подхватить при помощи ffmpeg – и сделать видео запись работы приложения в браузере<br><br>
+
+
+---------------
+**Не хотите пропускать ничего интересного?** 
+Подпишитесь на ленту [RSS Новости]( http://automated-testing.info/category/novosti.rss)  
+
+И еще, **хотите добавить ссылку** в следующий дайджест?<br>
+Тогда – **[сделайте это!](http://goo.gl/p8JpCx)** (Это – просто)   
+
+---------
+Смотрите также: [(Анонс) Automated Hamster: Ссылки для Автоматизаторов](http://automated-testing.info/t/anons-automated-hamster-ssylki-dlya-avtomatizatorov/3399)
