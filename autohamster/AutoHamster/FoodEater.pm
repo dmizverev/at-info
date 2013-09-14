@@ -17,6 +17,9 @@ sub eat {
         chomp $line;
         my ($date, $title, $url, $description, 
             $category, $tags_line, $submitter) = split /\t/, $line;
+        
+        die "URL should start from http:// <$url>" unless $url =~ /^https?:\/\//;
+        
         my $item = {
                      date        => $date, 
                      title       => $title, 
