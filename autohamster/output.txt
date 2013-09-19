@@ -1,31 +1,48 @@
-Дайджест полезных ссылок для тестировщиков-автоматизаторов #001 
+Дайджест полезных ссылок для тестировщиков-автоматизаторов #002 
 
 <img src="/uploads/default/16/e7ca841252bf0e41.png" width="529" height="136">
 
 ### Статьи по автоматизации тестирования
-* [Martin Fowler: http://martinfowler.com/bliki/PageObject.html](http://martinfowler.com/bliki/PageObject.html)  <br>Мартин Фаулер, известный человек в кругах разработчиков и архитекторов, добавил описание шаблона PageObject в контексте создания ПО. Так что теперь можно смело считать PageObject -- официальным паттерном проектирования!<br><br>
-* [Using Logs Effectively](http://codeweavers.net/using-logs-effectively/)  <br>Три монитора для мониторинга логов. Такое бы прикрутить для тестов!<br><br>
-* [Selenide - Лаконичные UI тесты на Java](http://ru.selenide.org) (Прислал(-а): Андрей Солнцев) <br>Selenide - это библиотека для UI тестов, построенная на базе Selenium WebDriver и решающая самые главные надоедливые проблемы тестировщика. Вам больше не нужно заботиться о том, как открыть и закрыть браузер, не надо беспокоиться о таймаутах, не надо писать монструозный код для ожидания наступления событий - сконцентрируйтесь на бизнес-логике!  <br><br>
-* [Selenium Alchemy (Blog)](http://alchemyse.wordpress.com)  <br>Подборка советов по работе с Selenium WebDriver и сопутствующих тем автоматизации.<br><br>
-* [Using WebDriver to automatically check for JavaScript errors on every page](http://watirmelon.com/2012/12/19/using-webdriver-to-automatically-check-for-javascript-errors-on-every-page/)  <br>Полезный пример, как отловить JavaScript ошибки на WebDriver<br><br>
-* [Martin Fowler: Writing Tests Against Page Objects](http://architects.dzone.com/articles/writing-tests-against-page)  <br>И еще одна статья, посвященная ПейджОбщектам от Мартина Фаулера, но неперь ориентирована на тестирование<br><br>
+* [Capturing JavaScript Errors in WebDriver - Even on Page Load!](http://jimevansmusic.blogspot.com/2013/09/capturing-javascript-errors-in.html)  <br>Jim Evans, один из основных контрибутеров WebDriver и создатель InternetExplorerDriver, продолжает цикл извращений с Fiddler’ом. На этот раз он покажет, как внедрить скрипты отлова JavaScript ошибок посредством прокси сервера, модифицируя html страницу налету.  Вот нет, чтобы добавить эту фичу в ядро WebDriver… :D<br><br>
+* [How Does Test Planning Differ for Manual and Automation Projects?](http://www.softwaretestinghelp.com/automation-test-palnning/) (Прислал(-а): @dzhariy) <br>Что нужно учитывать в планах, когда внедряете автоматизацию тестирования<br><br>
+* [Automated testing tools: Four reasons why projects fail](http://searchsoftwarequality.techtarget.com/opinion/Automated-testing-tools-Four-reasons-why-projects-fail)  <br>Причины, которые необходимо учитывать при создании успешной автоматизации тестирования<br><br>
+* [Mechanical Fixtures (Test Jigs) for automated testing](http://www.screlektroniks.com/test-equipment/index.php/featured/mechanical-fixtures-test-jigs-for-automated-testing/)  <br>Автоматизация тестирования для… хм… для электронных и механических устройств<br><br>
 
 
 ### Инструменты
-* [Chorus is a lightweight BDD test framework written in Java](https://github.com/Chorus-bdd/Chorus)  <br>Это инструмент для распределенного (параллельного) запуска Given/When/Then спецификаций для тестов на Java<br><br>
+* [GrapWalker: Model-Based Testing Tool](http://graphwalker.org)  <br>Самая загадочная вещь в автоматизации тестирования – это тесты на основе модели / состояний / конечных автоматов. В докладе по автоматизации тестирования в Spotify,  спикер порекомендовал этот инструмент. Кто-либо вообще использует MBT у себя?<br><br>
+* [Genymotion - The fastest Android emulator for app testing and presentation](http://www.genymotion.com) (Прислал(-а): @dzhariy) <br>Как многие заявляют – это самый быстрый эмулятор Android. Будет полезно, если, конечно же вы гоняете тесты под Android<br><br>
+* [Selenium.Webdriver.Domify](https://github.com/yngvebn/Selenium.Webdriver.Domify) (Прислал(-а): @dzhariy) <br>Интересная надстройка над WebDriver для .NET, которая позволяет заменить обычные вызовы Вебдрайвера, на что-то вот такое:
+
+```
+IWebDriver driver = new ChromeDriver(""/path/to/Chromedriver.exe"");
+IList<Button> allButtonsOnPage = driver.Document().Find<Button>();
+Form loginForm = driver.Document().Form(By.Id(""login-form""));
+```<br><br>
+* [SpecEasy is a BDD-based unit testing framework for .NET](https://github.com/trackabout/speceasy) (Прислал(-а): @dzhariy) <br>Новый BDD-фреймворк для .NET, который позволяет писать Given/When/Then тесты непосредственно в коде. Пока мега гламурных отчетов в нем нет. <br><br>
 
 
 ### Видео по автоматизации тестирования
-* [Webinar: Developing Test Automation Scripts with RubyMine](http://www.youtube.com/watch?v=zpt15XIjpas)  <br>Вебинар посвящен созданию тестов на Ruby + Cucumber + PageObject gem. От автора этого самого PageObject gem’а. Кроме того, рассматривается вопрос краткости, читабельности Cucumber-сценариев и уместности использования таблиц <br><br>
+* [Видео подборка по автоматизации веб-тестирования](http://www.ukrqa.org.ua/index.php/archive-movies-testing/category/веб-тестирование-3)  <br>Видео подборка по тестированию веб приложений с использованием таких инструментов как WebDriver, Thucydides и другие фреймворки, инструменты, советы <br><br>
+* [Видео подборка по автоматизации инструментам тестирования](http://www.ukrqa.org.ua/index.php/archive-movies-testing/category/инструменты-2)  <br>Видео по инструментам: Sikuli, Selenium, TestComplete, QTP<br><br>
+* [Видео подборка по автоматизации тестирования](http://www.ukrqa.org.ua/index.php/archive-movies-testing/category/общее)  <br>Общие темы автоматизации тестирования: архитектурные решения, советы по автоматизации, истории.<br><br>
+* [Selenide Harlem Shake](http://ru.selenide.org/2013/08/29/selenide-harlem-shake/) (Прислал(-а): @asolntsev) <br>Забавный скринкаст, демонстрирующий, насколько легко начать писать автоматические тесты с библиотекой Selenide.<br><br>
+* [How Spotify Does Test Automation](http://blog.smartbear.com/automated-testing/how-spotify-does-test-automation/)  <br>А используют они от Model-Based-Testing, до Sikuli и встраивания в выполняемые iOS приложения. Подходы у них, прямо говоря, не самые стандартные и простые. <br><br>
+* [How to Narrow Down What to Test](http://www.infoq.com/presentations/narrow-test-java-ruby) (Прислал(-а): @dzhariy) <br>Как выяснить, какой функционал действительно необходимо покрыть тестами в первую очередь? Как прислушаться к здравому смыслу, а не к общепринятым правилам?<br><br>
 
 
 ### Чудотворный  код
-* [Xvfb and ffmpeg Video recording](https://github.com/leonid-shevtsov/headless/blob/master/lib/headless/video/video_recorder.rb)  <br>Пример того, как записать видео состояния экрана на «безголовом»  графическом сервере при помощи ffmpeg<br><br>
+* [Снимок экрана страницы на JavaScript  + C# + WebDriver](https://gist.github.com/dzhariy/6572995) (Прислал(-а): @dzhariy) <br>Тесты в Internet Explorer, запущенные через сессию Remote Desktop, к сожалению, делают снимки экрана страницы – картинками, заполненными черным цветом. Это – попытка обойти проблему, использовав для снятия скриншота – средства JavaScript и Canvas. Данный пример кода внедряет библиотеку html2canvas в веб страницу, получает и сохраняет снимок экрана на диск.<br><br>
 
 
 ### Обсуждения
-* [What is the difference between Software Test Engineer, Test Automation Engineer and Software Developer in Test (SDET)?](http://sqa.stackexchange.com/questions/6408/what-is-the-difference-between-software-test-engineer-test-automation-engineer/6409)  <br>Так в чем же, все-таки, разница между: тестировщиком, автоматизатором и разработчиком «в тесте»?<br><br>
-* [PhantomJS: Render image to stdout](https://groups.google.com/forum/#!searchin/phantomjs/video/phantomjs/wluVGGjhL90/rE5zZ5znv4EJ)  <br>Похоже, «браузер без головы», PhantomJS, умеет сохранять скриншоты в стандартный поток вывода. Этот поток можно подхватить при помощи ffmpeg – и сделать видео запись работы приложения в браузере<br><br>
+* [Группа QA в Facebook](https://www.facebook.com/groups/qa.foo.bar/) (Прислал(-а): @TITnet) <br>Общение QA специалистов (тестеровщиков) больше похожее на копилку ссылок.<br><br>
+* [Not able to take screenshot using Remote webdriver](https://groups.google.com/forum/#!msg/webdriver/SVqx12z3f8s/70pgacsg_NkJ) (Прислал(-а): @dzhariy) <br>Удивительное и невероятное. Наверное, многие задумывались, почему же RemoteWebDriver не поддерживает снятие скриншотов и выплевывает непонятную ошибку. Как оказывается, все он поддерживает. Необходимо лишь вставить небольшой костыль <br><br>
+
+
+### Слайды, презентации по автоматизации тестирования
+* [Test Automation using Ruby](http://www.slideshare.net/sveatoslavcircel/test-automation-in-ruby-v20) (Прислал(-а): @dzhariy) <br>Обзор средств автоматизации на Ruby. И… ну просто замечательный 8-й слайд с тро-ло-лошечкой. <br><br>
+* [7 Deadly Sins of Agile Software Test Automation](http://craigsmith.id.au/2013/08/25/agile-2013-7-deadly-sins-of-agile-software-test-automation/) (Прислал(-а): @dzhariy) <br>Сказать, что это одна из лучших презентаций по автоматизации тестирования – это не сказать ничего. Практически каждый слайд там продуман и несет полезную и новую информацию. Я например, открыл для себя **F** (Fast) **I** (Isolated) **R** (Repeatable)  **S** (Self Verifying) **T** (Timely) . И это была лишь середина презентации...<br><br>
 
 
 ---------------
@@ -33,7 +50,7 @@
 Подпишитесь на ленту [RSS Новости]( http://automated-testing.info/category/novosti.rss)  
 
 И еще, **хотите добавить ссылку** в следующий дайджест?<br>
-Тогда – **[сделайте это!](http://goo.gl/p8JpCx)** (Это – просто)   
+Тогда – **[сделайте это через специальную форму!](http://goo.gl/p8JpCx)** (Это – просто)   
 
 ---------
 Смотрите также: [(Анонс) Automated Hamster: Ссылки для Автоматизаторов](http://automated-testing.info/t/anons-automated-hamster-ssylki-dlya-avtomatizatorov/3399)

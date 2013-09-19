@@ -81,7 +81,7 @@ foreach my $item (@feed_items)
 }
 open my $out, '>:utf8', "output.txt";
 
-print $out qq[Дайджест полезных ссылок для тестировщиков-автоматизаторов #001 \n\n];
+print $out qq[Дайджест полезных ссылок для тестировщиков-автоматизаторов #002 \n\n];
 print $out qq[<img src="/uploads/default/16/e7ca841252bf0e41.png" width="529" height="136">\n\n];
 
 foreach my $category (@categories_order)
@@ -108,7 +108,7 @@ print $out <<EOF;
 Подпишитесь на ленту [RSS Новости]( http://automated-testing.info/category/novosti.rss)  
 
 И еще, **хотите добавить ссылку** в следующий дайджест?<br>
-Тогда – **[сделайте это!](http://goo.gl/p8JpCx)** (Это – просто)   
+Тогда – **[сделайте это через специальную форму!](http://goo.gl/p8JpCx)** (Это – просто)   
 
 ---------
 Смотрите также: [(Анонс) Automated Hamster: Ссылки для Автоматизаторов](http://automated-testing.info/t/anons-automated-hamster-ssylki-dlya-avtomatizatorov/3399)
