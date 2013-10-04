@@ -4,13 +4,14 @@ use utf8;
 use AutoHamster::FoodEater;
 use Data::Dump qw[dump];
 
-my $form_article_eng = "Статья на английском";
-my $form_article_rus = "Статья на русском (украинском, белорусском)";
-my $form_tool        = "Инструмент (приложение, проект, продукт)";
-my $form_video       = "Видео";
-my $form_forum       = "Обсуждение (Stackoverflow, Форум, Google Groups)";
-my $form_slides      = "Слайды";
-my $form_link_code   = "Ссылка на код/github gist",
+my $form_at_info_topic = "Тема форума Automated-testing.info";
+my $form_article_eng   = "Статья на английском";
+my $form_article_rus   = "Статья на русском (украинском, белорусском)";
+my $form_tool          = "Инструмент (приложение, проект, продукт)";
+my $form_video         = "Видео";
+my $form_forum         = "Обсуждение (Stackoverflow, Форум, Google Groups)";
+my $form_slides        = "Слайды";
+my $form_link_code     = "Ссылка на код/github gist",
 
 
 my $cat_articles = "Статьи по автоматизации тестирования",
@@ -62,7 +63,7 @@ foreach my $item (@feed_items)
     {
         $current_cat = $cat_video;
     }
-    elsif ($item_cat eq $form_forum) 
+    elsif ($item_cat eq $form_forum or $item_cat eq $form_at_info_topic) 
     {
         $current_cat = $cat_talks;
     }
@@ -81,7 +82,7 @@ foreach my $item (@feed_items)
 }
 open my $out, '>:utf8', "output.txt";
 
-print $out qq[Дайджест полезных ссылок для тестировщиков-автоматизаторов #002 \n\n];
+print $out qq[Дайджест полезных ссылок для тестировщиков-автоматизаторов #004 \n\n];
 print $out qq[<img src="/uploads/default/16/e7ca841252bf0e41.png" width="529" height="136">\n\n];
 
 foreach my $category (@categories_order)

@@ -1,48 +1,21 @@
-Дайджест полезных ссылок для тестировщиков-автоматизаторов #002 
+Дайджест полезных ссылок для тестировщиков-автоматизаторов #004 
 
 <img src="/uploads/default/16/e7ca841252bf0e41.png" width="529" height="136">
 
 ### Статьи по автоматизации тестирования
-* [Capturing JavaScript Errors in WebDriver - Even on Page Load!](http://jimevansmusic.blogspot.com/2013/09/capturing-javascript-errors-in.html)  <br>Jim Evans, один из основных контрибутеров WebDriver и создатель InternetExplorerDriver, продолжает цикл извращений с Fiddler’ом. На этот раз он покажет, как внедрить скрипты отлова JavaScript ошибок посредством прокси сервера, модифицируя html страницу налету.  Вот нет, чтобы добавить эту фичу в ядро WebDriver… :D<br><br>
-* [How Does Test Planning Differ for Manual and Automation Projects?](http://www.softwaretestinghelp.com/automation-test-palnning/) (Прислал(-а): @dzhariy) <br>Что нужно учитывать в планах, когда внедряете автоматизацию тестирования<br><br>
-* [Automated testing tools: Four reasons why projects fail](http://searchsoftwarequality.techtarget.com/opinion/Automated-testing-tools-Four-reasons-why-projects-fail)  <br>Причины, которые необходимо учитывать при создании успешной автоматизации тестирования<br><br>
-* [Mechanical Fixtures (Test Jigs) for automated testing](http://www.screlektroniks.com/test-equipment/index.php/featured/mechanical-fixtures-test-jigs-for-automated-testing/)  <br>Автоматизация тестирования для… хм… для электронных и механических устройств<br><br>
+* [Executing visual studio 2010 unit tests without installing visual studio](http://mindinthewater.blogspot.com/2011/02/executing-visual-studio-2010-unit-tests.html) (Прислал(-а): @dzhariy) <br>Самый рабочий документ о том, как запустить MS-Test без установленной Visual Studio 2010<br><br>
+* [Thoughts on Test Automation in Agile](http://www.infoq.com/articles/thoughts-on-test-automation-in-agile) (Прислал(-а): @dzhariy) <br>Советы и план действий по внедрению автоматизации. Не знаю как вы, а я уже иду похожем путем, но, например, об идеи создать отдельный бэклог автоматизации, как советует автор, я задумался только сейчас. <br><br>
+* [Инструменты тестирования приложений для мобильных устройств: обзор вариантов и возможностей](http://www.enterra.ru/blog/tools_for_qa/)  <br>Обзор инструментов (в том числе и для автоматизации), полезных мобильному тестировщику. Позволит выбрать подходящий под конкретные нужды инструмент.<br><br>
 
 
 ### Инструменты
-* [GrapWalker: Model-Based Testing Tool](http://graphwalker.org)  <br>Самая загадочная вещь в автоматизации тестирования – это тесты на основе модели / состояний / конечных автоматов. В докладе по автоматизации тестирования в Spotify,  спикер порекомендовал этот инструмент. Кто-либо вообще использует MBT у себя?<br><br>
-* [Genymotion - The fastest Android emulator for app testing and presentation](http://www.genymotion.com) (Прислал(-а): @dzhariy) <br>Как многие заявляют – это самый быстрый эмулятор Android. Будет полезно, если, конечно же вы гоняете тесты под Android<br><br>
-* [Selenium.Webdriver.Domify](https://github.com/yngvebn/Selenium.Webdriver.Domify) (Прислал(-а): @dzhariy) <br>Интересная надстройка над WebDriver для .NET, которая позволяет заменить обычные вызовы Вебдрайвера, на что-то вот такое:
-
-```
-IWebDriver driver = new ChromeDriver(""/path/to/Chromedriver.exe"");
-IList<Button> allButtonsOnPage = driver.Document().Find<Button>();
-Form loginForm = driver.Document().Form(By.Id(""login-form""));
-```<br><br>
-* [SpecEasy is a BDD-based unit testing framework for .NET](https://github.com/trackabout/speceasy) (Прислал(-а): @dzhariy) <br>Новый BDD-фреймворк для .NET, который позволяет писать Given/When/Then тесты непосредственно в коде. Пока мега гламурных отчетов в нем нет. <br><br>
+* [Linq to Excel](https://code.google.com/p/linqtoexcel/) (Прислал(-а): @dzhariy) <br>Одно из самых простых и самых удобных средств прочитать Excel файл для .NET/C#<br><br>
+* [BrowserSwarm](http://blogs.windows.com/ie/b/ie/archive/2013/09/26/introducing-browserswarm-less-time-testing-more-innovation-on-the-web.aspx)  <br>Это инструмент будет полезен JavaScript разработчикам. Умеет гонять JavaScript-юнит тесты на различных браузерах одновременно. Будет ли эта штука бесплатной? – Вполне возможно, ведь Майкрософту очень важно то, чтобы проекты тестировались и в IE тоже. <br><br>
+* [HTML5 Resource Performance](http://dev.hubspot.com/blog/webkit-resource-performance) (Прислал(-а): @dzhariy) <br>Интерфейсы для сбора статистики по клиентской производительности уже появились в главной ветке Google Chrome. <br><br>
 
 
 ### Видео по автоматизации тестирования
-* [Видео подборка по автоматизации веб-тестирования](http://www.ukrqa.org.ua/index.php/archive-movies-testing/category/веб-тестирование-3)  <br>Видео подборка по тестированию веб приложений с использованием таких инструментов как WebDriver, Thucydides и другие фреймворки, инструменты, советы <br><br>
-* [Видео подборка по автоматизации инструментам тестирования](http://www.ukrqa.org.ua/index.php/archive-movies-testing/category/инструменты-2)  <br>Видео по инструментам: Sikuli, Selenium, TestComplete, QTP<br><br>
-* [Видео подборка по автоматизации тестирования](http://www.ukrqa.org.ua/index.php/archive-movies-testing/category/общее)  <br>Общие темы автоматизации тестирования: архитектурные решения, советы по автоматизации, истории.<br><br>
-* [Selenide Harlem Shake](http://ru.selenide.org/2013/08/29/selenide-harlem-shake/) (Прислал(-а): @asolntsev) <br>Забавный скринкаст, демонстрирующий, насколько легко начать писать автоматические тесты с библиотекой Selenide.<br><br>
-* [How Spotify Does Test Automation](http://blog.smartbear.com/automated-testing/how-spotify-does-test-automation/)  <br>А используют они от Model-Based-Testing, до Sikuli и встраивания в выполняемые iOS приложения. Подходы у них, прямо говоря, не самые стандартные и простые. <br><br>
-* [How to Narrow Down What to Test](http://www.infoq.com/presentations/narrow-test-java-ruby) (Прислал(-а): @dzhariy) <br>Как выяснить, какой функционал действительно необходимо покрыть тестами в первую очередь? Как прислушаться к здравому смыслу, а не к общепринятым правилам?<br><br>
-
-
-### Чудотворный  код
-* [Снимок экрана страницы на JavaScript  + C# + WebDriver](https://gist.github.com/dzhariy/6572995) (Прислал(-а): @dzhariy) <br>Тесты в Internet Explorer, запущенные через сессию Remote Desktop, к сожалению, делают снимки экрана страницы – картинками, заполненными черным цветом. Это – попытка обойти проблему, использовав для снятия скриншота – средства JavaScript и Canvas. Данный пример кода внедряет библиотеку html2canvas в веб страницу, получает и сохраняет снимок экрана на диск.<br><br>
-
-
-### Обсуждения
-* [Группа QA в Facebook](https://www.facebook.com/groups/qa.foo.bar/) (Прислал(-а): @TITnet) <br>Общение QA специалистов (тестеровщиков) больше похожее на копилку ссылок.<br><br>
-* [Not able to take screenshot using Remote webdriver](https://groups.google.com/forum/#!msg/webdriver/SVqx12z3f8s/70pgacsg_NkJ) (Прислал(-а): @dzhariy) <br>Удивительное и невероятное. Наверное, многие задумывались, почему же RemoteWebDriver не поддерживает снятие скриншотов и выплевывает непонятную ошибку. Как оказывается, все он поддерживает. Необходимо лишь вставить небольшой костыль <br><br>
-
-
-### Слайды, презентации по автоматизации тестирования
-* [Test Automation using Ruby](http://www.slideshare.net/sveatoslavcircel/test-automation-in-ruby-v20) (Прислал(-а): @dzhariy) <br>Обзор средств автоматизации на Ruby. И… ну просто замечательный 8-й слайд с тро-ло-лошечкой. <br><br>
-* [7 Deadly Sins of Agile Software Test Automation](http://craigsmith.id.au/2013/08/25/agile-2013-7-deadly-sins-of-agile-software-test-automation/) (Прислал(-а): @dzhariy) <br>Сказать, что это одна из лучших презентаций по автоматизации тестирования – это не сказать ничего. Практически каждый слайд там продуман и несет полезную и новую информацию. Я например, открыл для себя **F** (Fast) **I** (Isolated) **R** (Repeatable)  **S** (Self Verifying) **T** (Timely) . И это была лишь середина презентации...<br><br>
+* [TestBash Video: Balancing Test Automation Techniques – Matt Archer](http://www.ministryoftesting.com/2013/04/testbash-video-balancing-test-automation-techniques-matt-archer/) (Прислал(-а): @dzhariy) <br>Начиная где-то с 30-й минуты, докладчик рассказывает, как они сделали инструмент для полу-автоматизированного тестирования, отдав всю нудную работу машине, а интеллектуальную – человеку.   <br><br>
 
 
 ---------------
