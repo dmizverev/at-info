@@ -4,6 +4,9 @@ use utf8;
 use AutoHamster::FoodEater;
 use Data::Dump qw[dump];
 
+my @submitters_that_always_forget_to_put_AT_before_name = 
+  qw(polusok);
+
 my $form_at_info_topic = "Тема форума Automated-testing.info";
 my $form_article_eng   = "Статья на английском";
 my $form_article_rus   = "Статья на русском (украинском, белорусском)";
@@ -43,6 +46,16 @@ foreach my $item (@feed_items)
     
     my $current_cat = $cat_other;
     my $item_cat = $item->{'category'};
+
+    if ($item->{'submitter'})
+    {
+        if ( grep { $_ eq $item->{'submitter'} } @submitters_that_always_forget_to_put_AT_before_name )
+        {
+            $item->{'submitter'} = '@' . $item->{'submitter'};
+        }
+    }
+
+
     my $link = { 
                   title       => $item->{'title'},
                   url         => $item->{'url'},
@@ -80,9 +93,9 @@ foreach my $item (@feed_items)
     push @{ $content{$current_cat} }, $link;
     
 }
-open my $out, '>:utf8', "output.txt";
+open my $out, '>:utf8', "output.md";
 
-print $out qq[Дайджест полезных ссылок для тестировщиков-автоматизаторов #004 \n\n];
+print $out qq[Дайджест полезных ссылок для тестировщиков-автоматизаторов #005 \n\n];
 print $out qq[<img src="/uploads/default/16/e7ca841252bf0e41.png" width="529" height="136">\n\n];
 
 foreach my $category (@categories_order)
