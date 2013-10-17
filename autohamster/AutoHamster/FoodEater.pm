@@ -47,11 +47,15 @@ sub eat {
                      url         => $url, 
                      description => $description, 
                      category    => $category, 
-                     submitter   => $submitter
+                     tags_line   => $tags_line,
+                     submitter   => $submitter,
+
                    };
         
-       my @parsed_tags = split /,\s+/, $tags_line;
-       $item->{'tags'} = \@parsed_tags;
+       # Come back and implement this feature, lazy bitch 
+       # my @parsed_tags = split /,\s+/, $tags_line;
+       # $item->{'tags'} = \@parsed_tags;
+
        push @result, $item;
 
        $line_content = "";

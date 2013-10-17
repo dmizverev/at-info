@@ -17,6 +17,8 @@ my $form_slides        = "Слайды";
 my $form_link_code     = "Ссылка на код/github gist",
 
 
+
+my $cat_top_at   = "Интересное на AT.Info",
 my $cat_articles = "Статьи по автоматизации тестирования",
 my $cat_code     = "Чудотворный  код";
 my $cat_tools    = "Инструменты";
@@ -28,6 +30,7 @@ my $cat_other    = "И другое";
 
 my @categories_order = 
 (
+    $cat_top_at,
     $cat_articles,
     $cat_tools,
     $cat_video,
@@ -60,43 +63,48 @@ foreach my $item (@feed_items)
                   title       => $item->{'title'},
                   url         => $item->{'url'},
                   description => $item->{'description'},
+                  tags_line   => $item->{'tags_line'} ? $item->{'tags_line'} : "",
                   submitter   => $item->{'submitter'} ? "(Прислал(-а): $item->{'submitter'})" : "",
                };
     
-    if ($item_cat eq  $form_article_eng 
-    ||  $item_cat eq  $form_article_rus)
-    {
-        $current_cat = $cat_articles;
-    } 
-    elsif ($item_cat eq $form_tool) 
-    {
-        $current_cat = $cat_tools;
-    } 
-    elsif ($item_cat eq $form_video) 
-    {
-        $current_cat = $cat_video;
-    }
-    elsif ($item_cat eq $form_forum or $item_cat eq $form_at_info_topic) 
-    {
-        $current_cat = $cat_talks;
-    }
-    elsif ($item_cat eq $form_slides) 
-    {
-        $current_cat = $cat_slides;
-    }
-    elsif ($item_cat eq $form_link_code) 
-    {
-        $current_cat = $cat_code;
-    }
-
+    if ($item_cat eq  $form_article_eng              #        #
+    ||  $item_cat eq  $form_article_rus)             ##########
+    {                                                #        #
+        $current_cat = $cat_articles;                ##########
+    }                                                #        #
+    elsif ($item_cat eq $form_tool)                  ##########
+    {                                                #        #
+        $current_cat = $cat_tools;                   ##########
+    }                                                #        #
+    elsif ($item_cat eq $form_video)                 ##########
+    {                                                #        #
+        $current_cat = $cat_video;                   ##########
+    }                                                #        #
+    elsif ($item_cat eq $form_forum)                 ##########
+    {                                                #        #
+        $current_cat = $cat_talks;                   ##########
+    }                                                #        #
+    elsif ($item_cat eq $form_at_info_topic)         ##########
+    {                                                #        #
+        $current_cat = $cat_top_at;                  ##########
+    }                                                #        #
+    elsif ($item_cat eq $form_slides)                ##########
+    {                                                #        #
+        $current_cat = $cat_slides;                  ##########
+    }                                                #        #
+    elsif ($item_cat eq $form_link_code)             ##########
+    {                                                #        #
+        $current_cat = $cat_code;                    ##########
+    }                                                #        #
+    
     $content{$current_cat} //= [];
     push @{ $content{$current_cat} }, $link;
     
 }
 open my $out, '>:utf8', "output.md";
 
-print $out qq[Дайджест полезных ссылок для тестировщиков-автоматизаторов #005 \n\n];
-print $out qq[<img src="/uploads/default/16/e7ca841252bf0e41.png" width="529" height="136">\n\n];
+print $out qq[Дайджест полезных ссылок для тестировщиков-автоматизаторов #006 \n\n];
+print $out qq[<img src="http://automated-testing.info/uploads/default/16/e7ca841252bf0e41.png" width="529" height="136">\n\n];
 
 foreach my $category (@categories_order)
 {
@@ -108,7 +116,10 @@ foreach my $category (@categories_order)
 
     foreach my $item ( @category_items )
     {
-        print $out "* [$item->{'title'}]($item->{'url'}) $item->{'submitter'} <br>$item->{'description'}<br><br>\n";
+        
+        print $out "* [$item->{'title'}]($item->{'url'}) $item->{'submitter'} <br>";
+        print $out "<small><font color=\"gray\">$item->{'tags_line'}</font></small><br>";
+        print $out "$item->{'description'}<br><br>\n";
     }
 
     print $out "\n\n";
