@@ -7,7 +7,11 @@ var link_url_text = document.location.href;
 var link_url_var  = "&entry.1366844449=";
 var formUrl="https://docs.google.com/forms/d/1Ib9KdszfnAK5SuvxdYjGHT7OGrW5FHID7O7j9BJZTAw/viewform";
 
-window.open(formUrl + header_var + encodeURIComponent(header_text) + link_url_var + encodeURIComponent(header_text) + link_url_var);
+window.open(
+            formUrl + 
+            header_var + encodeURIComponent(header_text) + 
+            link_url_var + encodeURIComponent(link_url_text)
+           );
 
 
 /*

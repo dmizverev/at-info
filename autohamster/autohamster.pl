@@ -103,7 +103,7 @@ foreach my $item (@feed_items)
 }
 open my $out, '>:utf8', "output.md";
 
-print $out qq[Дайджест полезных ссылок для тестировщиков-автоматизаторов #006 \n\n];
+print $out qq[Дайджест полезных ссылок для тестировщиков-автоматизаторов #008 \n\n];
 print $out qq[<img src="http://automated-testing.info/uploads/default/16/e7ca841252bf0e41.png" width="529" height="136">\n\n];
 
 foreach my $category (@categories_order)
