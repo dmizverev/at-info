@@ -1,4 +1,0 @@
-Google Form Bookmarklet:
-
-http://jsfiddle.net/russenreaktor/EP7MZ/24/
-
