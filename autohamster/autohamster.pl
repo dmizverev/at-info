@@ -18,14 +18,14 @@ my $form_link_code     = "Ссылка на код/github gist",
 
 
 
-my $cat_top_at   = "Интересное на AT.Info",
-my $cat_articles = "Статьи по автоматизации тестирования",
-my $cat_code     = "Чудотворный  код";
-my $cat_tools    = "Инструменты";
-my $cat_video    = "Видео по автоматизации тестирования";
-my $cat_talks    = "Обсуждения";
-my $cat_slides   = "Слайды, презентации по автоматизации тестирования";
-my $cat_other    = "И другое";
+my $cat_top_at   = ":new: Интересное на AT.Info",
+my $cat_articles = ":paperclip: Статьи по автоматизации тестирования",
+my $cat_code     = ":sparkles: Чудотворный  код";
+my $cat_tools    = ":wrench: Инструменты";
+my $cat_video    = ":video_camera: Видео по автоматизации тестирования";
+my $cat_talks    = ":loudspeaker: Обсуждения";
+my $cat_slides   = ":eyes: Слайды, презентации по автоматизации тестирования";
+my $cat_other    = ":horse: И другое";
 
 
 my @categories_order = 
