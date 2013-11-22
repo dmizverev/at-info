@@ -1,24 +1,34 @@
-Дайджест полезных ссылок для тестировщиков-автоматизаторов #010 
+Дайджест полезных ссылок для тестировщиков-автоматизаторов #011 
 
 <img src="http://automated-testing.info/uploads/default/61/e442078ec743033d.png" width="529" height="136">
 
 ### Интересное на AT.Info
-* [Какие локаторы стоит писать для различных javascript библиотек?!](http://automated-testing.info/t/vse-zavisit-ot-proekta-ili-kak-vybrat-lokator-dlya-testov-na-webdriver/3681) (Прислал(-а): @polusok) <br><small><font color="gray">WebDriver, CSS, XPath</font></small><br>Указаны примеры для HTML или Bootstrap + JQuery, Knockout, ExtJS.<br><br>
-* [CSS vs XPath, какие локаторы использовать?](http://automated-testing.info/t/css-vs-xpath-kto-silnee/3673) (Прислал(-а): @polusok) <br><small><font color="gray">WebDriver, CSS, XPath</font></small><br>Что лучше css или xpath? Обсуждение одноименной статьи от @sidelnikovmike<br><br>
+* [Какой инструмент выбрать для автоматизации iOS?](http://automated-testing.info/t/kakoj-instrument-vybrat-dlya-avtomatizaczii-ios/3685) (Прислал(-а): @polusok) <br><small><font color="gray">Mobile</font></small><br>UI Automation или Appium, что лучше?!<br><br>
 
 
 ### Статьи по автоматизации тестирования
-* [Попытка сделать дайджест новостей из мира Python](http://habrahabr.ru/post/201378/)  <br><small><font color="gray">Python</font></small><br>Дайджест ссылок по Пайтону<br><br>
-* [Видеозапись выполнения тестов Selenium](http://internetka.in.ua/selenium-screen-recordering/)  <br><small><font color="gray">Java, WebDriver</font></small><br>Видео запись выполнения тестов на WebDriver.<br><br>
-* [Сравнение скорости работы WebDriver Binginds на наиболее популярных языках программирования](http://seleniumforall.blogspot.se/2013/11/blog-post.html?utm_medium=twitter&utm_source=twitterfeed) (Прислал(-а): @polusok) <br><small><font color="gray">Java, Python, Ruby, WebDriver, JavaScript</font></small><br>Если писать webdriver тесты на разных языках, все ли они быстро будут запускаться? Статья на эту тему<br><br>
-* [Selenium - CSS или XPath?](http://sidelnikovmike.blogspot.ru/2013/11/selenium-css-xpath.html) (Прислал(-а): @sidelnikovmike) <br><small><font color="gray">Автоматизация тестирования</font></small><br>Что же лучше - CSS или XPath? Кто быстрее? Кто удобнее?
-Ответы на эти вопросы я попытался дать в данной статье.<br><br>
-* [PHPUnit + WebDriver = Friends](http://codeception.com/11-12-2013/working-with-phpunit-and-selenium-webdriver.html) (Прислал(-а): @davert) <br><small><font color="gray">Автоматизация тестирования, WebDriver, Web, PHP</font></small><br>В июле фейсбук выпустил новую библиотеку для работы с Selenium WebDriver для PHP. Основное её отличие от существующих аналогов - максимальная приближенность к официальным API. К сожалению, в сети мало документации по ней. В данной статье наглядно демонстрируется процесс написания полнофункционального теста с использованием webdriver и PHPUnit.<br><br>
-* [Running tests against multiple devices/resources (in parallel)](http://holgerkrekel.net/2013/11/12/running-tests-against-multiple-devicesresources-in-parallel/) (Прислал(-а): @DmitriyZverev) <br><small><font color="gray">Автоматизация тестирования, Код, Python</font></small><br>Параллельное выполнение тестов с помощью pytest<br><br>
+* [Turning Assertions Into a Domain-Specific Language](http://www.petrikainulainen.net/programming/unit-testing/turning-assertions-into-a-domain-specific-language/)  <br><small><font color="gray">Автоматизация тестирования, Код, Java</font></small><br>Пример создания красивых и читабельных проверок на базе своего DSL и инструмента FEST-Assert<br><br>
+* [Продвинутая JavaScript отладка при помощи console.table()](http://habrahabr.ru/post/202394/) (Прислал(-а): @dzhariy) <br><small><font color="gray">JavaScript</font></small><br>Продвинутое представление отладочных данных страницы в виде таблицы<br><br>
+* [Подмена хоста в вебдрайвер-тестах на лету](http://artkoshelev.github.io/posts/change-host/)  <br><small><font color="gray">Java, WebDriver</font></small><br>Пример подмены хоста к WebDriver server посредством Browsermob прокси <br><br>
+* [RabbitMqManager, библиотека для управления сервером RabbitMq с помощью RobotFramework](http://automated-testing.info/t/rabbitmqmanager-biblioteka-dlya-upravleniya-serverom-rabbitmq-s-pomoshhyu-robotframework/3721) (Прислал(-а): @polusok) <br><small><font color="gray">Python, RobotFramework</font></small><br>Данная библиотека представляет собой реализацию API RabbitMq. Да, для Rabbitmq есть менеджер, написанный на python. Однако, он консольный. Библиотека дает возможность использования API прямо из Robot Framework.<br><br>
+* [Подборка ссылок по расширению функциональности для автоматизации тестирования на RobotFramework](https://plus.google.com/b/117403126633703020530/+Automated-testingInfo/posts/Qifwc7r7F4b) (Прислал(-а): @polusok) <br><small><font color="gray">Автоматизация тестирования, Python</font></small><br>Подборка ссылок по расширению функциональности для автоматизации тестирования на RobotFramework. RabbitMqManager,   Datapool, TestLink, EmailLibrary, lXMLLibrary и другое.<br><br>
+* [Refactorings in Alphabetical Order](http://www.refactoring.com/catalog/) (Прислал(-а): @polusok) <br><small><font color="gray">Java, Patterns</font></small><br>Учим паттерны программирования<br><br>
+* [Clean Code Cheat Sheet](http://www.planetgeek.ch/2013/06/05/clean-code-cheat-sheet/) (Прислал(-а): @polusok) <br><small><font color="gray">Patterns, Programming</font></small><br>Читлист по разработке правильного кода<br><br>
 
 
-### Чудотворный  код
-* [robotframework-selenium2library-extensions модуль для Robot Framework](https://github.com/hmalphettes/robotframework-selenium2library-extensions) (Прислал(-а): @polusok) <br><small><font color="gray">Автоматизация тестирования, Python, RobotFramework</font></small><br>Модуль чтобы расширить функциональность существующей библиотеки selenium2library. Action Chains, IFrame, и т.д.<br><br>
+### Инструменты
+* [RobotFramework-Plus Tool Collection](https://github.com/frehberg/robotframeworkplus) (Прислал(-а): @DmitriyZverev) <br><small><font color="gray">Автоматизация тестирования, Код, Python, Robot Framework</font></small><br>Данная библиотека для Robot Framework предоставляет следующую функциональность: * графики в log-файле * ""Wait For Process Or Kill"" keyword<br><br>
+* [Compare .NET Objects](http://comparenetobjects.codeplex.com) (Прислал(-а): @dzhariy) <br><small><font color="gray">Автоматизация тестирования, C#</font></small><br>Библиотека .NET, позволяет автоматически сравнить объекты между собой посредством Reflection <br><br>
+* [XUnit.PhantomQ v.1.2 Released](http://www.tomdupont.net/2013/11/xunitphantomq-v12-released.html)  <br><small><font color="gray">Автоматизация тестирования, C#</font></small><br>PhantomQ интегрирует тесты на JavaScript с набором тестов на C#<br><br>
+* [Automa - Next Generation GUI Automation](http://www.getautoma.com/) (Прислал(-а): @polusok) <br><small><font color="gray">Python, Windows</font></small><br>Очередная разработка автоматизации windows приложений на python.<br><br>
+
+
+### Видео по автоматизации тестирования
+* [Regression obsession](http://oredev.org/2013/wed-fri-conference/regression-obsession) (Прислал(-а): @dzhariy) <br><small><font color="gray">Автоматизация тестирования, Проверки, Тестирование</font></small><br>Майкл Болтон говорит о важности проверок (checking), затрагивая тему важности автоматизации и философии тестирования. Проверки можно автоматизировать, и автоматизация может быть очень ценным инструментом в тестировании, но и относится к результатам автоматизации необходимо осмысленно, не думая, что если все тесты зеленые -- значит у нас все отлично<br><br>
+
+
+### Слайды, презентации по автоматизации тестирования
+* [JavaScript + Webdriver = ♥](http://www.slideshare.net/VLDCORP/javascript-webdriver)  <br><small><font color="gray">WebDriver, Web, Javascript</font></small><br>Презентация с советами как хачить приложение посредством JavaScript в тестах с использованием WebDriver<br><br>
 
 
 ---------------
