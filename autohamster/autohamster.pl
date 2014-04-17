@@ -42,9 +42,21 @@ my @categories_order =
 
 my @feed_items = eat("food.txt");
 
+my @feed_items = eat("food.txt");
+
+# delete unique url
+my @unique = ();
+my %seen   = ();
+
+foreach my $elem ( @feed_items )
+{
+   next if $seen{ $elem->{'url'} }++;
+   push @unique, $elem;
+}
+
 my %content;
 
-foreach my $item (@feed_items) 
+foreach my $item (@unique) 
 {
     
     my $current_cat = $cat_other;
