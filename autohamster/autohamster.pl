@@ -42,8 +42,6 @@ my @categories_order =
 
 my @feed_items = eat("food.txt");
 
-my @feed_items = eat("food.txt");
-
 # delete unique url
 my @unique = ();
 my %seen   = ();
